@@ -1,0 +1,43 @@
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  color: white;
+  background: #f0f0f0;
+}
+
+a,label,h4,li {
+  color: black;
+  font-family: 'Baloo Thambi 2', cursive;
+}
+
+hr {
+  opacity: 1;
+}
+
+.glow {
+  color: inherit;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    color: silver;
+  }
+
+  to {
+    color: black;
+  }
+}
+
+.list-group-item {
+  background-color: inherit;
+  border: none;
+}
