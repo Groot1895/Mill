@@ -16,10 +16,6 @@ a,label,h4,li,p {
   font-family: 'Baloo Thambi 2', cursive;
 }
 
-hr {
-  opacity: 1;
-}
-
 .glow {
   color: inherit;
   -webkit-animation: glow .6s ease-in-out infinite alternate;
@@ -59,4 +55,17 @@ hr {
    80% { transform: translate(-1px, -1px); color: indigo;}
    90% { transform: translate(1px, 2px); color: blue;}
    100% { transform: translate(1px, -2px); color: green;}
+ }
+
+ .modal-header,.modal-footer {
+   border:none;
+   justify-content: center;
+ }
+
+ .modal-footer {
+   justify-content: center;
+ }
+
+ .list-group-horizontal {  
+   justify-content: center;
  }
