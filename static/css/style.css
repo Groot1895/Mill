@@ -16,6 +16,16 @@ a,label,h4,li,p {
   font-family: 'Baloo Thambi 2', cursive;
 }
 
+.strike {
+  color: black;
+  font-family: 'Baloo Thambi 2', cursive;
+}
+
+.rate {
+  color: red;
+  font-family: 'Baloo Thambi 2', cursive;
+}
+
 .list-group-item {
   background-color: inherit;
   border: none;
