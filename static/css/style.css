@@ -5,8 +5,17 @@ html {
 
 body {
   color: black;
-  background: #f0f0f0;  
+  background: #f0f0f0;
   font-family: 'Sen', sans-serif;
+}
+
+.morph {
+  border-radius: 0.55rem;
+  box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #ffffff,inset 3px 3px 6px #cccccc, inset -3px -3px 6px #ffffff;
+}
+
+.modal-backdrop.show {
+  opacity: 1;
 }
 
 .strike {
@@ -22,8 +31,9 @@ body {
   border: none;
 }
 
-.list-group {
-  border-radius: none;
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0.6s;
 }
 
 .shake{
@@ -45,7 +55,7 @@ body {
    100% { transform: translate(1px, -2px); color: green;}
  }
 
- .modal-header,.modal-footer {
+.modal-header,.modal-footer {
    border:none;
    justify-content: center;
  }
