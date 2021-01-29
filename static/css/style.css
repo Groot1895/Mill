@@ -23,7 +23,7 @@ a {
 }
 
 .btn-morph {
-  box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #ffffff;
+  box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #ffffff,inset 3px 3px 6px #cccccc, inset -3px -3px 6px #ffffff;
 }
 
 /* rate */
