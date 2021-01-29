@@ -3,10 +3,16 @@ html {
   scroll-behavior: smooth;
 }
 
-body,a {
+body {
   color: black;
   background: #f0f0f0;
   font-family: 'Sen', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  color: black;
 }
 
 .morph {
@@ -14,7 +20,7 @@ body,a {
   box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #ffffff,inset 3px 3px 6px #cccccc, inset -3px -3px 6px #ffffff;
 }
 
-.btn-morph {  
+.btn-morph {
   box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #ffffff,inset 3px 3px 6px #cccccc, inset -3px -3px 6px #ffffff;
 }
 
@@ -24,11 +30,6 @@ body,a {
 
 .rate {
   color: red;
-}
-
-.list-group-item {
-  background-color: inherit;
-  border: none;
 }
 
 .carousel-fade .active.carousel-item-start,
@@ -57,11 +58,16 @@ body,a {
 
 .modal-header,.modal-footer {
    border:none;
-   justify-content: center;
  }
 
- .modal-footer {
-   justify-content: center;
+ .modal-backdrop.show {
+   background: inherit;
+   opacity: 1;
+ }
+
+ .modal-content {
+   border: none;
+   box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #ffffff;
  }
 
  .list-group-horizontal {
