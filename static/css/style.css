@@ -65,8 +65,17 @@ a {
    opacity: 1;
  }
 
+ .modal-backdrop {
+   background: transparent;
+ }
+
+ .fade {
+   transition: 0.15s linear;
+ }
+
  .modal-content {
    border: none;
+   background: inherit;
    box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #ffffff,inset 3px 3px 6px #cccccc, inset -3px -3px 6px #ffffff;
  }
 
