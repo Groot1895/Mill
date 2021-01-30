@@ -29,11 +29,11 @@ a {
 /* rate */
 
 .strike {
-  color: black;
+  color: gray;
 }
 
 .rate {
-  color: indianred;
+  color: firebrick;
 }
 
 /* carousel */
