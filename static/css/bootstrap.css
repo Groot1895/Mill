@@ -5122,8 +5122,7 @@ textarea.form-control-lg {
   outline: 0;
 }
 
-.modal-dialog {
-  top: 40%;
+.modal-dialog {  
   position: relative;
   width: auto;
   margin: 0.5rem;
@@ -5131,7 +5130,7 @@ textarea.form-control-lg {
 }
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease;
-  transform: translate(0, 50px);
+  transform: translate(0, -50px);
 }
 @media (prefers-reduced-motion: reduce) {
   .modal.fade .modal-dialog {
