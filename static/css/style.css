@@ -88,6 +88,11 @@ a {
   background: inherit;
 }
 
+.modal-footer {
+  border: none;
+  display: block;
+}
+
 /* run */
 
 .end {
