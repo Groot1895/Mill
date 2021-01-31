@@ -46,7 +46,7 @@ a {
 /* offer */
 
 .shake{
-   animation: shake 0.8s;
+   animation: shake 1s;
    animation-iteration-count: infinite;
 }
 
