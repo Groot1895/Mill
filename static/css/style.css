@@ -70,7 +70,7 @@ hr {
 
 /* modal */
 
-.modal-header {
+.modal-header, .modal-footer {
   border:none;
 }
 
@@ -90,6 +90,10 @@ hr {
 .modal-content {
   border: none;
   background: inherit;
+}
+
+.modal-footer {
+  display: block;
 }
 
 /* run */
