@@ -23,32 +23,35 @@
           <img src="static/images/logo.svg" alt="" height="33">
         </div>
         <div class="col pop">
-            <label class="fs-4" style="font-family: 'Mukta Malar', sans-serif;">கரிகாலன் மினி மில்</label><br>
+            <label class="fs-4" style="font-family: 'Mukta Malar', sans-serif;">கரிகாலன்</label><br>
         </div>
         <div class="col mid">
-            <label class="fs-2">KARIKAALAN MINI MILL</label>
+            <label class="fs-2">KARIKAALAN</label>
         </div>
       </div>
-      <div class="row fs-4 border-top border-bottom border-dark fd pt-2 pb-2">
-        <div class="col-sm">
+
+      <hr class="fd">
+      <div class="row fs-4">
+        <div class="col-sm end">
           <a href="tel:+91 9245419677" class="text-decoration-none">+91 9245419677</a>
         </div>
-        <div class="col-sm">
+        <div class="col-sm pop">
           <a href="tel:+91 9487986414" class="text-decoration-none">+91 9487986414</a>
         </div>
-        <div class="col-sm">
+        <div class="col-sm mid">
           <label style="font-family: 'Mukta Malar', sans-serif;">திருக்காட்டுப்பள்ளி</label>
         </div>
-        <div class="col-sm">
+        <div class="col-sm end">
           <label>Thirukaattupalli</label>
         </div>
       </div>
+      <hr class="fd">
 
-      <div class="p-3 fd">
+      <div class="p-3 pop">
         <label class="fs-3 morph p-3" style="font-family: 'Mukta Malar', sans-serif; color:firebrick;">இட்லி மாவு மொத்தமாக (அ) சில்லரையாக அரைத்து தரப்படும்</label>
       </div>
 
-      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade fd" data-bs-ride="carousel">
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade end" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
             <label class="fs-3"><label class="shake"> Offer </label> Buy 3kg combo @ ₹ 150<label>
@@ -59,55 +62,107 @@
         </div>
       </div>
 
-      <div class="row row-cols-2 row-cols-sm-3 pb-4 pt-4 fd">
+      <ul class="nav nav-pills pt-4 pb-4 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active end fs-4" id="pills-hall-tab" data-bs-toggle="pill" href="#pills-hall" role="tab" aria-controls="pills-hall" aria-selected="true">Hall</a>
+        </li>
+        <li class="nav-item pop" role="presentation">
+          <a class="nav-link fs-4" id="pills-mill-tab" data-bs-toggle="pill" href="#pills-mill" role="tab" aria-controls="pills-mill" aria-selected="false">Mill</a>
+        </li>
+        <li class="nav-item mid" role="presentation">
+          <a class="nav-link fs-4" id="pills-rent-tab" data-bs-toggle="pill" href="#pills-rent" role="tab" aria-controls="pills-rent" aria-selected="false">Rental House</a>
+        </li>
+        <li class="nav-item cent" role="presentation">
+          <a class="nav-link fs-4" id="pills-parking-tab" data-bs-toggle="pill" href="#pills-parking" role="tab" aria-controls="pills-parking" aria-selected="false">Car Parking</a>
+        </li>
+        <li class="nav-item pop" role="presentation">
+          <a class="nav-link fs-4" id="pills-lodge-tab" data-bs-toggle="pill" href="#pills-lodge" role="tab" aria-controls="pills-lodge" aria-selected="false">Lodging</a>
+        </li>
+      </ul>
 
-        <div class="col">
-          <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">கோதுமை மாவு</h4>
-          <h4>Gothumai maavu</h4>
-          <input type="button" data-bs-toggle="modal" data-bs-target="#Gothumai" value="Order Now" class="btn btn-morph">
+      <div class="tab-content fd" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-hall" role="tabpanel" aria-labelledby="pills-hall-tab">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <div class="accordion accordion-flush">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed fs-5" style="font-family: 'Mukta Malar', sans-serif;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">தமிழ் காலண்டர்</button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+                    <div class="accordion-body">one</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="accordion accordion-flush">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">English Calendar</button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
+                    <div class="accordion-body">two</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">கடலை மாவு</h4>
-          <h4>Kadalai maavu</h4>
-          <input type="button" data-bs-toggle="modal" data-bs-target="#Kadalai" value="Order Now" class="btn btn-morph">
+        <div class="tab-pane fade" id="pills-mill" role="tabpanel" aria-labelledby="pills-mill-tab">
+          <div class="row row-cols-2 row-cols-md-3 pb-4 pt-4">
+            <div class="col">
+              <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">கோதுமை மாவு</h4>
+              <h4>Gothumai maavu</h4>
+              <input type="button" data-bs-toggle="modal" data-bs-target="#Gothumai" value="Order Now" class="btn btn-morph">
+            </div>
+            <div class="col">
+              <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">கடலை மாவு</h4>
+              <h4>Kadalai maavu</h4>
+              <input type="button" data-bs-toggle="modal" data-bs-target="#Kadalai" value="Order Now" class="btn btn-morph">
+            </div>
+            <div class="col">
+              <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">சத்து மாவு</h4>
+              <h4>Health Mix</h4>
+              <input type="button" data-bs-toggle="modal" data-bs-target="#Health" value="Order Now" class="btn btn-morph">
+            </div>
+            <div class="col">
+              <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">மிளகாய் தூள்</h4>
+              <h4>chilli powder</h4>
+              <input type="button" data-bs-toggle="modal" data-bs-target="#chilli" value="Order Now" class="btn btn-morph">
+            </div>
+            <div class="col">
+              <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">மல்லி தூள்</h4>
+              <h4>Coriander powder</h4>
+              <input type="button" data-bs-toggle="modal" data-bs-target="#Coriander" value="Order Now" class="btn btn-morph">
+            </div>
+            <div class="col">
+              <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">மஞ்சள் தூள்</h4>
+              <h4>Turmeric powder</h4>
+              <input type="button" data-bs-toggle="modal" data-bs-target="#Turmeric" value="Order Now" class="btn btn-morph">
+            </div>
+            <div class="col">
+              <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">சாம்பார் பொடி</h4>
+              <h4>Sambar powder</h4>
+              <input type="button" data-bs-toggle="modal" data-bs-target="#Sambar" value="Order Now" class="btn btn-morph">
+            </div>
+            <div class="col">
+              <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">குளியல் பொடி</h4>
+              <h4>Bathing powder</h4>
+              <input type="button" data-bs-toggle="modal" data-bs-target="#Bathing" value="Order Now" class="btn btn-morph">
+            </div>
+            <div class="col">
+              <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">சீகைக்காய் தூள்</h4>
+              <h4>Sikakai powder</h4>
+              <input type="button" data-bs-toggle="modal" data-bs-target="#Shikakai" value="Order Now" class="btn btn-morph">
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">சத்து மாவு</h4>
-          <h4>Health Mix</h4>
-          <input type="button" data-bs-toggle="modal" data-bs-target="#Health" value="Order Now" class="btn btn-morph">
+        <div class="tab-pane fade" id="pills-rent" role="tabpanel" aria-labelledby="pills-rent-tab">
+          <h2 class="pt-4 pb-4">Currently Full</h2>
         </div>
-        <div class="col">
-          <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">மிளகாய் தூள்</h4>
-          <h4>chilli powder</h4>
-          <input type="button" data-bs-toggle="modal" data-bs-target="#chilli" value="Order Now" class="btn btn-morph">
-        </div>
-        <div class="col">
-          <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">மல்லி தூள்</h4>
-          <h4>Coriander powder</h4>
-          <input type="button" data-bs-toggle="modal" data-bs-target="#Coriander" value="Order Now" class="btn btn-morph">
-        </div>
-        <div class="col">
-          <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">மஞ்சள் தூள்</h4>
-          <h4>Turmeric powder</h4>
-          <input type="button" data-bs-toggle="modal" data-bs-target="#Turmeric" value="Order Now" class="btn btn-morph">
-        </div>
-        <div class="col">
-          <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">சாம்பார் பொடி</h4>
-          <h4>Sambar powder</h4>
-          <input type="button" data-bs-toggle="modal" data-bs-target="#Sambar" value="Order Now" class="btn btn-morph">
-        </div>
-        <div class="col">
-          <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">குளியல் பொடி</h4>
-          <h4>Bathing powder</h4>
-          <input type="button" data-bs-toggle="modal" data-bs-target="#Bathing" value="Order Now" class="btn btn-morph">
-        </div>
-        <div class="col">
-          <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">சீகைக்காய் தூள்</h4>
-          <h4>Sikakai powder</h4>
-          <input type="button" data-bs-toggle="modal" data-bs-target="#Shikakai" value="Order Now" class="btn btn-morph">
-        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
       </div>
-
     </div>
 
     <div class="modal fade" id="Gothumai" data-bs-backdrop="static" tabindex="-1" aria-labelledby="order" aria-hidden="true">
@@ -194,7 +249,7 @@
         </div>
       </div>
     </div>
-
+    
     <div class="modal fade" id="chilli" data-bs-backdrop="static" tabindex="-1" aria-labelledby="order" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content p-3">
@@ -364,4 +419,5 @@
     </div>
 
   </body>
+
 </html>
