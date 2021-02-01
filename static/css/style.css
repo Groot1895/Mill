@@ -166,3 +166,8 @@ hr {
   outline: 0;
   box-shadow: inherit;
 }
+
+.list-group-item {
+  background: inherit;
+  border: none;
+}
