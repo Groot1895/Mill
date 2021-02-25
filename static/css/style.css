@@ -95,34 +95,8 @@ hr {
 
 /* run */
 
-.end {
-  animation: pop 1.5s ease;
-}
-
-.pop {
-  animation: pop 1.2s ease;
-}
-
-.mid {
-  animation: pop .9s ease;
-}
-
-.cent {
-  animation: pop .6s ease;
-}
-
 .fd {
   animation: fade 1.5s ease;
-}
-
-@keyframes pop {
-    0%{
-      transform:scale(6);
-      opacity: 0;
-    }
-    45%{
-      opacity: 0;
-    }
 }
 
 @keyframes fade {
@@ -174,4 +148,32 @@ hr {
 .list-group-item {
   background: inherit;
   border: none;
+}
+
+.btn span, a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after,
+a span:after {
+  content: '\003E\003E';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -12px;
+  transition: 0.5s;
+}
+
+.btn:hover span,
+a:hover span {
+  padding-right: 24px;  
+}
+
+.btn:hover span:after,
+a:hover span:after {
+  opacity: 1;
+  right: 0;
 }
