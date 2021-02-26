@@ -23,6 +23,7 @@ hr {
 }
 
 .btn-morph, .btn-check:focus + .btn-lg, .btn-lg:focus {
+  outline: 0;
   border-radius: 1rem;
   box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #ffffff,inset 3px 3px 6px #cccccc, inset -3px -3px 6px #ffffff;
 }
@@ -31,14 +32,14 @@ hr {
   border: none;
 }
 
-.btn-lg span, a span {
+.btn span, a span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.btn-lg span:after,
+.btn span:after,
 a span:after {
   content: '\003E';
   position: absolute;
@@ -48,12 +49,12 @@ a span:after {
   transition: 0.5s;
 }
 
-.btn-lg:hover span,
+.btn:hover span,
 a:hover span {
   padding-right: 15px;  
 }
 
-.btn-lg:hover span:after,
+.btn:hover span:after,
 a:hover span:after {
   opacity: 1;
   right: 0;
