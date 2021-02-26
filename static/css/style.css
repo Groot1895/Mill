@@ -1,6 +1,8 @@
 html {
-  scrollbar-width: none;
-  scroll-behavior: smooth;
+  animation: fade 2s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 body {
@@ -32,14 +34,14 @@ hr {
   border: none;
 }
 
-.btn span, a span {
+.btn-lg span, a span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.btn span:after,
+.btn-lg span:after,
 a span:after {
   content: '\003E';
   position: absolute;
@@ -49,12 +51,12 @@ a span:after {
   transition: 0.5s;
 }
 
-.btn:hover span,
+.btn-lg:hover span,
 a:hover span {
   padding-right: 15px;  
 }
 
-.btn:hover span:after,
+.btn-lg:hover span:after,
 a:hover span:after {
   opacity: 1;
   right: 0;
@@ -181,4 +183,13 @@ a:hover span:after {
 .list-group-item {
   background: inherit;
   border: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
