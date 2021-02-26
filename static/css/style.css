@@ -27,6 +27,38 @@ hr {
   box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #ffffff,inset 3px 3px 6px #cccccc, inset -3px -3px 6px #ffffff;
 }
 
+.btn-lg, .btn-group-lg > .btn {
+  border: none;
+}
+
+.btn-lg span, a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-lg span:after,
+a span:after {
+  content: '\003E';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -12px;
+  transition: 0.5s;
+}
+
+.btn-lg:hover span,
+a:hover span {
+  padding-right: 15px;  
+}
+
+.btn-lg:hover span:after,
+a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 /* rate */
 
 .strike {
@@ -148,32 +180,4 @@ hr {
 .list-group-item {
   background: inherit;
   border: none;
-}
-
-.btn span, a span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.btn span:after,
-a span:after {
-  content: '\003E\003E';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -12px;
-  transition: 0.5s;
-}
-
-.btn:hover span,
-a:hover span {
-  padding-right: 24px;  
-}
-
-.btn:hover span:after,
-a:hover span:after {
-  opacity: 1;
-  right: 0;
 }
