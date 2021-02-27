@@ -16,7 +16,7 @@
 
   <body>
 
-    <div class="container text-center fd">
+    <div class="container text-center mb-5">
 
       <div class="row row-cols-1 pt-4">
         <div class="col">
@@ -29,7 +29,7 @@
             <label class="fs-2">KARIKAALAN</label>
         </div>
       </div>
-      <hr class="fd">
+      <hr>
       <div class="row fs-4 pt-2 pb-2">
         <div class="col-sm">
           <a href="tel:+91 9245419677" class="text-decoration-none link-dark">+91 9245419677</a>
@@ -44,7 +44,7 @@
           <label>Thirukaattupalli</label>
         </div>
       </div>
-      <hr class="fd">
+      <hr>
 
       <div class="p-3">
         <label class="fs-4 morph p-3" style="font-family: 'Mukta Malar', sans-serif; color:firebrick;">இட்லி மாவு மொத்தமாக (அ) சில்லரையாக அரைத்து தரப்படும்</label>
@@ -61,7 +61,7 @@
         </div>
       </div>
 
-      <ul class="nav nav-pills pt-2 pb-2" id="pills-tab" role="tablist">
+      <ul class="nav nav-pills pt-2 pb-2 justify-content-evenly" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <a class="nav-link fs-5 active" id="pills-hall-tab" data-bs-toggle="pill" href="#pills-hall" role="tab" aria-controls="pills-hall" aria-selected="true"><span style="font-family: 'Mukta Malar', sans-serif;"> மண்டபம்</span> - Hall</a>
         </li>
@@ -72,15 +72,17 @@
 
       <div class="tab-content pb-5" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-hall" role="tabpanel" aria-labelledby="pills-hall-tab">
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="accordion accordion-flush">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fs-5" style="font-family: 'Mukta Malar', sans-serif;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">தமிழ் காலண்டர்</button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
-                    <div class="accordion-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <span style="font-family: 'Mukta Malar', sans-serif;">காலண்டர்</span> - Calendar
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col">
                       <div class="row g-5">
                         <span class="border-bottom border-dark p-1 pb-1" style="font-family: 'Mukta Malar', sans-serif;">முஹுர்தம் தேதிகள்</span>
                         <div class="col">
@@ -157,18 +159,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="accordion accordion-flush">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">English Calendar</button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
-                    <div class="accordion-body">
+                    <div class="col">
                       <div class="row g-5"><span class="border-bottom border-dark p-1 pb-1">Auspicious Days</span>
                         <div class="col">
                           <span class="border-bottom border-dark p-1 pb-1">January</span>
@@ -254,12 +245,12 @@
           <div class="row row-cols-2 row-cols-md-3 pb-4 pt-4">
             <div class="col">
               <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">கோதுமை மாவு</h4>
-              <h4>Gothumai maavu</h4>              
+              <h4>Gothumai maavu</h4>
               <button data-bs-toggle="modal" data-bs-target="#Gothumai" value="Order Now" class="btn-lg btn-morph"><span>Order Now</span></button>
             </div>
             <div class="col">
               <h4 class="mt-4" style="font-family: 'Mukta Malar', sans-serif;">கடலை மாவு</h4>
-              <h4>Kadalai maavu</h4>              
+              <h4>Kadalai maavu</h4>
               <button data-bs-toggle="modal" data-bs-target="#Kadalai" value="Order Now" class="btn-lg btn-morph"><span>Order Now</span></button>
             </div>
             <div class="col">
@@ -298,7 +289,11 @@
               <button data-bs-toggle="modal" data-bs-target="#Shikakai" value="Order Now" class="btn-lg btn-morph"><span>Order Now</span></button>              
             </div>
           </div>
-        </div>        
+        </div>
+      </div>
+      
+      <div class="mmorph p-2">
+        <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6339334341428!2d78.95591582922768!3d10.846797199517118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaeb69cb4eac31%3A0x46cd4c2d9788af14!2sKARIKALAN%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1614437448948!5m2!1sen!2sin" style="width: 100%;"></iframe>
       </div>
 
     </div>
@@ -314,7 +309,7 @@
             <label class="fs-4" style="font-family: 'Mukta Malar', sans-serif;">கோதுமை மாவு - Gothumai maavu</label><br>
             <!--<label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label><br>
             <label class="fs-4 border-bottom border-dark"> 1 Kg - <s class="strike p-1 fs-5">₹ 55</s> <span class="fs-3 rate">₹ 50</span> </label>-->
-            <div class="row pt-4">
+            <div class="row pt-4 pb-4">
               <label class="fs-5">Click to Call & Order</label>
               <div class="col-sm">
                 <a href="tel:+91 9245419677" class="text-decoration-none fs-5 link-dark"> +91 9245419677 </a>
@@ -322,6 +317,9 @@
               <div class="col-sm">
                 <a href="tel:+91 9487986414" class="text-decoration-none fs-5 link-dark"> +91 9487986414 </a>
               </div>
+            </div>
+            <div class="mmorph p-2 mb-3">
+              <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6339334341428!2d78.95591582922768!3d10.846797199517118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaeb69cb4eac31%3A0x46cd4c2d9788af14!2sKARIKALAN%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1614437448948!5m2!1sen!2sin" style="width: 100%;"></iframe>
             </div>
           </div>
           <div class="modal-footer">
@@ -345,7 +343,7 @@
             <!--<label class="fs-4 border-bottom border-dark"> 250 Gram - <s class="strike p-1 fs-5">₹ 25</s> <span class="fs-3 rate">₹ 22</span> </label><br>
             <label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 45</s> <span class="fs-3 rate">₹ 42</span> </label><br>
             <label class="fs-4 border-bottom border-dark"> 1 Kg - <s class="strike p-1 fs-5">₹ 90</s> <span class="fs-3 rate">₹ 85</span> </label>-->
-            <div class="row pt-4">
+            <div class="row pt-4 pb-4">
               <label class="fs-5">Click to Call & Order</label>
               <div class="col-sm">
                 <a href="tel:+91 9245419677" class="text-decoration-none fs-5 link-dark"> +91 9245419677 </a>
@@ -353,6 +351,9 @@
               <div class="col-sm">
                 <a href="tel:+91 9487986414" class="text-decoration-none fs-5 link-dark"> +91 9487986414 </a>
               </div>
+            </div>
+            <div class="mmorph p-2 mb-3">
+              <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6339334341428!2d78.95591582922768!3d10.846797199517118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaeb69cb4eac31%3A0x46cd4c2d9788af14!2sKARIKALAN%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1614437448948!5m2!1sen!2sin" style="width: 100%;"></iframe>
             </div>
           </div>
           <div class="modal-footer">
@@ -375,7 +376,7 @@
             <label class="fs-4" style="font-family: 'Mukta Malar', sans-serif;">சத்து மாவு - Health Mix</label><br>
             <!--<label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label><br>
             <label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label>-->
-            <div class="row pt-4">
+            <div class="row pt-4 pb-4">
               <label class="fs-5">Click to Call & Order</label>
               <div class="col-sm">
                 <a href="tel:+91 9245419677" class="text-decoration-none fs-5 link-dark"> +91 9245419677 </a>
@@ -383,6 +384,9 @@
               <div class="col-sm">
                 <a href="tel:+91 9487986414" class="text-decoration-none fs-5 link-dark"> +91 9487986414 </a>
               </div>
+            </div>
+            <div class="mmorph p-2 mb-3">
+              <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6339334341428!2d78.95591582922768!3d10.846797199517118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaeb69cb4eac31%3A0x46cd4c2d9788af14!2sKARIKALAN%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1614437448948!5m2!1sen!2sin" style="width: 100%;"></iframe>
             </div>
           </div>
           <div class="modal-footer">
@@ -405,7 +409,7 @@
             <label class="fs-4" style="font-family: 'Mukta Malar', sans-serif;">மிளகாய் தூள் - chilli powder</label><br>
             <!--<label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label><br>
             <label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label>-->
-            <div class="row pt-4">
+            <div class="row pt-4 pb-4">
               <label class="fs-5">Click to Call & Order</label>
               <div class="col-sm">
                 <a href="tel:+91 9245419677" class="text-decoration-none fs-5 link-dark"> +91 9245419677 </a>
@@ -413,6 +417,9 @@
               <div class="col-sm">
                 <a href="tel:+91 9487986414" class="text-decoration-none fs-5 link-dark"> +91 9487986414 </a>
               </div>
+            </div>
+            <div class="mmorph p-2 mb-3">
+              <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6339334341428!2d78.95591582922768!3d10.846797199517118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaeb69cb4eac31%3A0x46cd4c2d9788af14!2sKARIKALAN%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1614437448948!5m2!1sen!2sin" style="width: 100%;"></iframe>
             </div>
           </div>
           <div class="modal-footer">
@@ -435,7 +442,7 @@
             <label class="fs-4" style="font-family: 'Mukta Malar', sans-serif;">மல்லி தூள் - Coriander powder</label><br>
             <!--<label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label><br>
             <label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label>-->
-            <div class="row pt-4">
+            <div class="row pt-4 pb-4">
               <label class="fs-5">Click to Call & Order</label>
               <div class="col-sm">
                 <a href="tel:+91 9245419677" class="text-decoration-none fs-5 link-dark"> +91 9245419677 </a>
@@ -443,6 +450,9 @@
               <div class="col-sm">
                 <a href="tel:+91 9487986414" class="text-decoration-none fs-5 link-dark"> +91 9487986414 </a>
               </div>
+            </div>
+            <div class="mmorph p-2 mb-3">
+              <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6339334341428!2d78.95591582922768!3d10.846797199517118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaeb69cb4eac31%3A0x46cd4c2d9788af14!2sKARIKALAN%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1614437448948!5m2!1sen!2sin" style="width: 100%;"></iframe>
             </div>
           </div>
           <div class="modal-footer">
@@ -465,7 +475,7 @@
             <label class="fs-4" style="font-family: 'Mukta Malar', sans-serif;">மஞ்சள் தூள் - Turmeric powder</label><br>
             <!--<label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label><br>
             <label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label>-->
-            <div class="row pt-4">
+            <div class="row pt-4 pb-4">
               <label class="fs-5">Click to Call & Order</label>
               <div class="col-sm">
                 <a href="tel:+91 9245419677" class="text-decoration-none fs-5 link-dark"> +91 9245419677 </a>
@@ -473,6 +483,9 @@
               <div class="col-sm">
                 <a href="tel:+91 9487986414" class="text-decoration-none fs-5 link-dark"> +91 9487986414 </a>
               </div>
+            </div>
+            <div class="mmorph p-2 mb-3">
+              <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6339334341428!2d78.95591582922768!3d10.846797199517118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaeb69cb4eac31%3A0x46cd4c2d9788af14!2sKARIKALAN%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1614437448948!5m2!1sen!2sin" style="width: 100%;"></iframe>
             </div>
           </div>
           <div class="modal-footer">
@@ -495,7 +508,7 @@
             <label class="fs-4" style="font-family: 'Mukta Malar', sans-serif;">சாம்பார் பொடி - Sambar powder</label><br>
             <!--<label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label><br>
             <label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label>-->
-            <div class="row pt-4">
+            <div class="row pt-4 pb-4">
               <label class="fs-5">Click to Call & Order</label>
               <div class="col-sm">
                 <a href="tel:+91 9245419677" class="text-decoration-none fs-5 link-dark"> +91 9245419677 </a>
@@ -503,6 +516,9 @@
               <div class="col-sm">
                 <a href="tel:+91 9487986414" class="text-decoration-none fs-5 link-dark"> +91 9487986414 </a>
               </div>
+            </div>
+            <div class="mmorph p-2 mb-3">
+              <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6339334341428!2d78.95591582922768!3d10.846797199517118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaeb69cb4eac31%3A0x46cd4c2d9788af14!2sKARIKALAN%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1614437448948!5m2!1sen!2sin" style="width: 100%;"></iframe>
             </div>
           </div>
           <div class="modal-footer">
@@ -525,7 +541,7 @@
             <label class="fs-4" style="font-family: 'Mukta Malar', sans-serif;">குளியல் பொடி - Bathing powder</label><br>
             <!--<label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label><br>
             <label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label>-->
-            <div class="row pt-4">
+            <div class="row pt-4 pb-4">
               <label class="fs-5">Click to Call & Order</label>
               <div class="col-sm">
                 <a href="tel:+91 9245419677" class="text-decoration-none fs-5 link-dark"> +91 9245419677 </a>
@@ -533,6 +549,9 @@
               <div class="col-sm">
                 <a href="tel:+91 9487986414" class="text-decoration-none fs-5 link-dark"> +91 9487986414 </a>
               </div>
+            </div>
+            <div class="mmorph p-2 mb-3">
+              <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6339334341428!2d78.95591582922768!3d10.846797199517118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaeb69cb4eac31%3A0x46cd4c2d9788af14!2sKARIKALAN%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1614437448948!5m2!1sen!2sin" style="width: 100%;"></iframe>
             </div>
           </div>
           <div class="modal-footer">
@@ -555,7 +574,7 @@
             <label class="fs-4" style="font-family: 'Mukta Malar', sans-serif;">சீகைக்காய் தூள் - Sikakai powder</label><br>
             <!--<label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label><br>
             <label class="fs-4 border-bottom border-dark"> 500 Gram - <s class="strike p-1 fs-5">₹ 27</s> <span class="fs-3 rate">₹ 25</span> </label>-->
-            <div class="row pt-4">
+            <div class="row pt-4 pb-4">
               <label class="fs-5">Click to Call & Order</label>
               <div class="col-sm">
                 <a href="tel:+91 9245419677" class="text-decoration-none fs-5 link-dark"> +91 9245419677 </a>
@@ -563,6 +582,9 @@
               <div class="col-sm">
                 <a href="tel:+91 9487986414" class="text-decoration-none fs-5 link-dark"> +91 9487986414 </a>
               </div>
+            </div>
+            <div class="mmorph p-2 mb-3">
+              <iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6339334341428!2d78.95591582922768!3d10.846797199517118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaeb69cb4eac31%3A0x46cd4c2d9788af14!2sKARIKALAN%20Marriage%20Hall!5e0!3m2!1sen!2sin!4v1614437448948!5m2!1sen!2sin" style="width: 100%;"></iframe>
             </div>
           </div>
           <div class="modal-footer">
