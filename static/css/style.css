@@ -8,8 +8,7 @@ html {
 body {
   color: black;
   background: #f0f0f0;
-  font-family: 'Sen', sans-serif;
-  width: 100vw;
+  font-family: 'Sen', sans-serif;  
   height: 100vh;
 }
 
@@ -29,42 +28,10 @@ hr {
   box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #ffffff,inset 3px 3px 6px #cccccc, inset -3px -3px 6px #ffffff;
 }
 
-.btn-morph, .btn-check:focus + .btn-lg, .btn-check:focus + .btn, .btn-close:focus + .btn-lg, .btn-lg:focus, .btn:focus, .btn-close:focus {
+.btn-morph, .btn-check:focus + .btn, .btn-check:focus + .btn, .btn-close:focus + .btn, .btn:focus, .btn:focus, .btn-close:focus {
   outline: 0;
   border-radius: 1rem;
   box-shadow: 3px 3px 6px #cccccc, -3px -3px 6px #ffffff;
-}
-
-.btn-lg, .btn-group-lg > .btn {
-  border: none;
-}
-
-.btn-lg span, a span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.btn-lg span:after,
-a span:after {
-  content: '\003E';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -15px;
-  transition: 0.5s;
-}
-
-.btn-lg:hover span,
-a:hover span {
-  padding-right: 15px;  
-}
-
-.btn-lg:hover span:after,
-a:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 
 /* rate */
@@ -169,6 +136,14 @@ a:hover span:after {
 
 /* calendar */
 
+.accordion-button {
+  border: none;
+}
+
+.accordion-body {
+  padding: 0 1.5rem;
+}
+
 .accordion-button:not(.collapsed) {
   color: inherit;
   background-color: inherit;
@@ -197,4 +172,4 @@ a:hover span:after {
 .scrollbar-hidden {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}       
+}
